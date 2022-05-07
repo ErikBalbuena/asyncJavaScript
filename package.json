@@ -1,0 +1,22 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "Trabajar con asincronismo",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikBalbuena/asyncJavaScript.git"
+  },
+  "keywords": [
+    "callback"
+  ],
+  "author": "Erik Balbuena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErikBalbuena/asyncJavaScript/issues"
+  },
+  "homepage": "https://github.com/ErikBalbuena/asyncJavaScript#readme"
+}
