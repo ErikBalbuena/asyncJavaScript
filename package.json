@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ErikBalbuena/asyncJavaScript/issues"
   },
-  "homepage": "https://github.com/ErikBalbuena/asyncJavaScript#readme"
+  "homepage": "https://github.com/ErikBalbuena/asyncJavaScript#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
