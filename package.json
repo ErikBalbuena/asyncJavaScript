@@ -4,7 +4,9 @@
   "description": "Trabajar con asincronismo",
   "main": "index.js",
   "scripts": {
-    "callback": "node index.js"
+    "callback": "node index.js",
+    "promesa" : "node promises.js",
+    "callback:challenge": "node challenge.js"
   },
   "repository": {
     "type": "git",
