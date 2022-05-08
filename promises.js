@@ -202,3 +202,63 @@ async function awaitFuncion(){
 }
 
 awaitFuncion();
+
+
+//REGRESANDO AL CURSO DE PLATZI: PROMESAS________________________________
+
+const algoPasa = () => {
+    return new Promise((resolve,reject) =>{
+        //Se necesita de una estructura if para 
+        //incluir las posibilidades de respuesta
+        let condicion = true;
+        if(condicion){
+            resolve("bien hecho");
+        }else{
+            reject("no se realizó");
+        }
+
+    });
+}
+
+//Para invocarse es necesario utilizar los métodos de then y catch
+
+algoPasa().then(response => {
+    console.log(response);
+}).catch(err => {
+    console.log(err);
+});
+
+const algoPasa02 = () =>{
+    return new Promise((resolve,reject) => {
+        let condicion = true;
+        if(condicion){
+            setTimeout(() => {resolve("BIEN HECHO DESDE algoPasa02")},3000);
+        }else{
+            let error = new Error("RECHAZADO POR NO SER TRUE");
+            reject(error);
+
+        }    
+    }
+
+    );
+}
+
+algoPasa02().then(respuesta => console.log("respuesta",respuesta))
+.catch(respuesta => console.log("error", respuesta));
+
+//Se pueden agragar más then()
+
+//PROMESAS ENCADENADAS
+
+//EXISTE EL METODO DE PROMISE all() que ejecuta 
+//las promesas encadenadas y las devuelve en un array
+//Si una devuelve error, entonces se devuelve error de all()
+
+Promise.all([algoPasa(),algoPasa02()]).then(responseArray => {
+    console.log("arreglo bien hecho desde all()", responseArray);
+}).catch(errorArray => {
+    console.log("errorArray desde all()", errorArray);
+});
+
+
+
